@@ -1,0 +1,299 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style:disc;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* multiple used */
+.flex{
+
+  display: flex;
+  gap: .5rem;
+
+}
+.container{
+
+  width: 70%;
+  margin-inline: auto;
+
+}
+.cvContent{
+
+  margin-block: .8rem 1rem;
+  padding-left: .1rem;
+
+}
+h2.title{
+
+  text-align: center;
+  padding: .3rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  background-color: rgba(0,0,0, .9);
+  color: white;
+
+}
+.date h3{
+
+  gap: .2rem;
+  color: black !important;
+  font-size: .8rem !important;
+  padding-block: .1rem;
+
+}
+.header .flex > *{
+
+  width: max-content;
+
+}
+
+/* cv */
+
+#cv{
+
+  font-family: 'Poppins';
+  margin-block: 4rem;
+
+}
+
+p{
+
+  font-weight: 600;
+  font-size: .8rem;
+
+}
+h2{
+
+  font-size: 1rem;
+
+}
+h3{
+
+  font-size: .9rem;
+
+}
+li{
+
+  font-size: .8rem;
+  font-weight: 600;
+  column-count: 2;
+  color: blue;
+
+}
+
+/* personal */
+#personal .name{
+
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: sans-serif;
+
+}
+
+/* socials */
+
+.Socials{
+
+  flex-wrap:wrap;
+  width: 40rem;
+  column-gap: 1rem;
+  padding-block: .5rem;
+  row-gap: .4rem;
+  color: blue;
+
+}
+.Socials > * + *{
+
+  border-left: 2px solid blue;
+  padding-left: 1rem;
+
+}
+
+/* personalDis */
+.personalDescription{
+
+  padding-block: .5rem;
+  margin-bottom: .6rem;
+  border-block: 1px solid black;
+
+}
+
+/* Skills */
+
+.grid{
+
+  display: grid;
+  justify-content: space-evenly;
+  margin-block: 1rem;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+.Skills > *{
+
+  width: 100%;
+  height: 100%;
+
+}
+.Skills > * + *{
+
+  border-left: 1px solid black;
+
+}
+.Skills h2{
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+
+}
+/* Projects */
+
+.project .flex{
+
+  gap: .2rem;
+
+}
+.project h3{
+
+font-size: 1rem;
+color: blue;
+
+}
+.project h4{
+
+  font-size: .8rem;
+  color: rgba(0,0,0, .7);
+  margin-top: .1rem;
+
+
+}
+.project p{
+
+  width: 90%;
+  margin-top: .2rem;
+
+}
+
+/* Eduaction */
+.education .flex{
+
+  gap: .2rem;
+
+}
+.education h3{
+
+font-size: 1rem;
+color: blue;
+
+}
+.education h4{
+
+  font-size: .8rem;
+  color: rgba(0,0,0, .7);
+  margin-top: .1rem;
+
+
+}
+.education p{
+
+  width: 90%;
+  margin-top: .2rem;
+
+}
+/* Experience */
+.experience .flex{
+
+  gap: .2rem;
+
+}
+.experience h3{
+
+font-size: 1rem;
+color: blue;
+
+}
+.experience h4{
+
+  font-size: .8rem;
+  color: rgba(0,0,0, .7);
+  margin-top: .1rem;
+
+
+}
+.experience p{
+
+  width: 90%;
+  margin-top: .2rem;
+
+}
